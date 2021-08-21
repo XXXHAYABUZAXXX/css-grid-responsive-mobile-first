@@ -1,0 +1,47 @@
+#main {
+  #section-a {
+    background: $clr-white;
+    color: $clr-gray;
+    padding: 2rem;
+
+    .content-wrap {
+      padding-top: 0;
+    }
+  }
+
+  #section-b {
+    padding: 2rem 1rem 1rem;
+
+    li {
+      background: $clr-white;
+      color: $clr-gray;
+      margin-bottom: 1rem;
+
+      .card {
+        &-content {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  #section-c {
+    background: $clr-white;
+    color: $clr-gray;
+    padding: 2rem;
+
+    .content-wrap {
+      padding-top: 0;
+    }
+  }
+
+  #section-d {
+    .box {
+      padding: 2rem 3.5rem;
+
+      &:first-child {
+        background: $clr-blue;
+      }
+    }
+  }
+}

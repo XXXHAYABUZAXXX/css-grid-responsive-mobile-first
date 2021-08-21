@@ -1,0 +1,10 @@
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
+  }
+
+  .content-wrap {
+    grid-column: 2/4;
+  }
+}

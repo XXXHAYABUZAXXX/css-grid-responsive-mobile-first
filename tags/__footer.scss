@@ -1,0 +1,13 @@
+#footer {
+  background: $clr-black;
+  padding: 2rem;
+
+  p {
+    padding: 0;
+    text-transform: capitalize;
+
+    a {
+      color: $clr-blue;
+    }
+  }
+}
