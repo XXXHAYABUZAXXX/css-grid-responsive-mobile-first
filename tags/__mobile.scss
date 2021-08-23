@@ -9,8 +9,27 @@
     grid-column: 2/4;
   }
 
+  #section-a .content-text p {
+    columns: 2;
+    gap: 2rem;
+  }
+
   #section-d .box,
   #footer div {
     grid-column: span 2;
+  }
+
+  #section-b {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 43rem)) 1fr;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        flex-basis: 32%;
+      }
+    }
   }
 }

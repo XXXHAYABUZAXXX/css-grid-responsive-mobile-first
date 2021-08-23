@@ -142,9 +142,32 @@ li {
     -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
+  #section-a .content-text p {
+    -webkit-columns: 2;
+            columns: 2;
+    gap: 2rem;
+  }
   #section-d .box,
   #footer div {
     grid-column: span 2;
+  }
+  #section-b {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr (minmax(auto, 43rem))[2] 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 43rem)) 1fr;
+  }
+  #section-b ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #section-b ul li {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
   }
 }
 /*# sourceMappingURL=style.css.map */
